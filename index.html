@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Find out what you're likely to pull from the standard banner with this Genshin Impact wish simulator." name="description">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Comida Gacha Clicker</title>
+</head>
+
+<body style="cursor: url(./images/ui/cursor);">
+    <header>
+        <h1>Comida Gacha Clicker</h1>
+    </header>
+
+    <div class="page">
+        <div class="wish-container">
+            <img src="images/banners/standard-banner.png" class="banner-img" alt="standard banner">
+
+            <!-- No tocar .l.  -->
+            <div class="counter">
+                <h3 id="contador">0</h1>
+                <p id="clickCounter"></p>
+            </div>
+
+            <img src="./images/ui/alfajor.png" class="alfajor" id="alfjorcito" onclick="audioPlay(); clic();">
+
+            <div id="wish-info" class="wish-info">
+        
+                <div class="wish-options">
+                    <button id="single-wish" class="btn single-wish" onclick="comprar(0);">Tirar x1</button>
+                    <button id="ten-wish" class="btn ten-wish" onclick="comprarDiez();">Tirar x10</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display pull images Y NO TOCAR .L. -->
+        <div id="card-border" class="card-border">
+            <div id="card-container" class="card-container">
+                <!-- Dynamically Inserted -->
+                <!--
+                    <div class="card five-stars" id="item1">
+                        <img src="images/characters/Keqing.png">
+                    </div>
+                    <div class="card four-stars" id="item2">
+                        <img src="images/characters/Beidou.png">
+                    </div>
+                    <div class="card three-stars" id="item3">
+                        <img src="images/weapons/black-tassel.png">
+                    </div>
+                    <div class="card three-stars" id="item4">
+                        <img src="images/weapons/emerald-orb.png">
+                    </div>
+                    <div class="card three-stars" id="item5">
+                        <img src="images/weapons/eye-of-perception.png">
+                    </div>
+                    <div class="card three-stars" id="item6">
+                        <img src="images/weapons/harbinger-of-dawn.png">
+                    </div>
+                    <div class="card three-stars" id="item7">
+                        <img src="images/weapons/slingshot.png">
+                    </div>
+                    <div class="card three-stars" id="item8">
+                        <img src="images/weapons/magic-guide.png">
+                    </div>
+                    <div class="card three-stars" id="item9">
+                        <img src="images/weapons/cool-steel.png">
+                    </div>
+                    <div class="card three-stars" id="item10">
+                        <img src="images/weapons/thrilling-tales-of-dragon-slayers.png">
+                    </div>
+                -->
+            </div>
+        </div>
+        
+        <h3>Historial:</h3>
+
+        <!-- Display pull stats -->
+        <div id="summary" class="summary">
+            <p>Los resultados se mostrarán acá.</p>
+            <!-- Dynamically Inserted -->
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

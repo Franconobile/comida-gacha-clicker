@@ -1,0 +1,12 @@
+.banner-img {
+    height: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.alfajor {
+    height: auto;
+    width: 100%;
+    max-width: 120px;
+    cursor: pointer;
+}
